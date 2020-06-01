@@ -26,6 +26,6 @@ jobs:
       with:
         node-version: 13
     - name: Install Surge
-      uses: npm install --global surge
+      run: npm install --global surge
     - name: Run Surge
-      uses: surge ./ bootcamp2020_practice.surge.sh --token ${{ secrets.Faizan_Token  }}
+      run: surge ./ bootcamp2020_practice.surge.sh --token ${{ secrets.Faizan_Token  }}
